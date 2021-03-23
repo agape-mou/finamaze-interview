@@ -1,0 +1,32 @@
+<mjml>
+  <mj-body>
+    <mj-section padding-bottom="0px">
+      <mj-column>
+        <mj-text font-size="16px" font-family="helvetica">Bonjour Landfiles,</mj-text>
+        <mj-text font-size="16px" font-family="helvetica">
+          Nous venons de faire une livraison sur l'environnement {{environment}}.
+        </mj-text>
+        <mj-text font-size="16px" font-family="helvetica">Voici la liste des tickets livrés:</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding-left="15px" padding-top="0px">
+      <mj-column>
+        <mj-table>
+          {{#tickets}}
+            <tr>
+              <td style="padding: 0 15px 0 0; width: 75px; font-weight: bold">{{key}}</td>
+              <td style="padding: 0 15px">{{summary}}</td>
+            </tr>
+          {{/tickets}}
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="15px" font-family="helvetica">Happy testing &nbsp; 🥳🥳🥳 !</mj-text>
+        <mj-text font-size="16px" font-family="helvetica">Cordialement.</mj-text>
+        <mj-divider border-color="#303B96"></mj-divider>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

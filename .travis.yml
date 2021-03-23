@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 12.18.0
+addons:
+  apt:
+    packages:
+      - libsecret-1-0
+deploy:
+  provider: npm
+  api_key:
+    secure: NXaBCr+AKdyBCb8Cn61QfEBU0m8rmp9bYVQfZWXDdt58/0BbH+YBJVSrRX/p3ugZdQ4uvMmNvg33ilQ9l0DCvl9PiREuUSpiYixenysE+UgLwfW4SsbBAPMikEUxjXkt8H1G/P4yHBZKhLutEhcMKCEjUQQI20t6KEX3G7NX0/XitmXj+ihvFTM2uwYG67wd/xM9UyvXGm936J8UGqLyAPUA/pLYGZl91aSvZuK0sPo4L5wA4kZ8MESNPyKMeOeXOC8wMl4R8e+vNIg27amchWF6SH3MTQkV2ozucWHqEWDBcJjgCFMLppl+nTcL33PYjokPEzekhT+T13i4ixlhmCm4FJvLwf9ZZZLJj05utdTHcRXBuhfHzol4oWAFTI0I7Jc7UvNw1JcQF5MBR6wfzOBxYm8RvT3sndexHaVgPMhSvikuleLHEKW5a3RYtCf8Dz9rdt5VO1zwrGXNaEU4w4P0CGeNEQdoMcF9ZY72QEvyIVqocEEIGvDN3+knS4xHU1JHHAJtf8iggzpn77vLveibFdTUMeC728LlRH2DNdNPvsUF+J49FLJmm8bI5DKj0F5XgGGs89fG1cEc5uB9XFT5AQhpH2WksC2Mc7KGDRHk1UEzqik0se/PnCCJGT+cyHkW8PRvW4qGKuUDQcKF1r0WAlUzI2k5yRkvAbEzQlQ=
+  on:
+    tags: true
+    repo: agape-mou/automation
+    branch: main
+  skip_cleanup: 'true'
+  email:
+    secure: P+NJE4yTpGfzHvPpU4BL/Y/FAM9uJBR1gshLVe3hZ2lRryESBNPlewGt2n8TX3zV6fvB8N0XB8XyKpqxHtSR6fbOWI7O5/XBPdG6sQsSIDfwmxB0+aNG33ifIa6OGrrB6bgZGxATktpNyQkk0KMNt1OHWBvbC8ryIx72DxSJi/uzkqyT8S7tg9kh4BeL5trzeBDSRo6jpSM995Y65zufhuJjnsz2qSp+qrXaipMp+azfwD9cXOkI9blD/Fiuq7lCqHx81Haq4p4XdWWfkCDZFJT1jIMgfmaQJ7ybpE4c26amN8/HQola4tkW8K4yZzOVwvcMHVJQvpv5FQKNmq8yecT+rVEvoeRW2nLp5/bG3dN30vY3KxXI2LNjRTGEMm5KOhQujBlPLJ6djqKwlQ4rwnB8pd/q6WRIxiJNCgjRAFucet6+b17F/YzoZvJjTNxbLSMQElD+S7WJQk/BFmjyRAnOPMbko4FSWoEyaLBVZ52xgxmgoFIs/MSFzCBmFd8R0IShRDrwRw4JaDgWYBJ+e4O88v8BxxDNloXuziIU74fzd8U2qPMYDML1prft2t+lMYW5tgloL/iJ2ZvJS4xhlmFswEsgMdU32lJvCGDDj/ThUTqLOwrRRPWFafupMJXcLpAsksD7GNejJEtv3S6LAqKLRy8Q59+RSV1KfQCgvUM=
